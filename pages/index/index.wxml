@@ -1,0 +1,66 @@
+<view class="index">
+
+    <!-- 一句激励的话开始 -->
+    <view class="oneword">
+        {{oneword}}
+    </view>
+    <!-- <view class="line"></view>   下划线 -->
+    <!-- 一句激励的话结束 -->
+
+    <!-- 便签开始 -->
+    <view class="note">
+        <view class="img">
+            <image src="../../images/index/dingzi.png"></image>
+        </view>
+        <p>未完成任务</p>
+        <!-- 下划线开始 -->
+        <view class="line-mini"></view>
+        <!-- 下划线结束 -->
+
+        <view class="detail">
+            <!-- 有任务未完成时展示  开始-->
+            <view wx:if="{{taskShow===false}}" class="not ">
+                <view class="card bc1">
+                    <view class="taskText ">今晚十点之前完成数学作业</view>
+                    <view class="taskTime">5-2 18:26</view>
+                </view>
+                <view class="card bc2">
+                    <view class="taskText">今晚十点之前完成计算机网络的教学视频以及练习</view>
+                    <view class="taskTime">5-2 18:53</view>
+                </view>
+                <view class="card bc3">
+                    <view class="taskText">今晚十点之前完成计算机网络的教学视频以及练习</view>
+                    <view class="taskTime">5-2 18:53</view>
+                </view>
+            </view>
+            <!-- 有任务未完成时展示  结束-->
+
+            <!-- 所有任务已完成时展示  开始-->
+            <view wx:else class="down ">
+                您已经完成了自己设定的所有任务!
+            </view>
+            <!-- 所有任务已完成时展示  结束-->
+
+            <!-- 展示所有的任务 开始 -->
+            <navigator url="../../pages/task/task" hover-class="no">
+                添加和查看任务>>
+                <!-- <image src="../../images/index/tianjia.png"></image> -->
+            </navigator>
+            <!-- 展示所有的任务 结束 -->
+
+        </view>
+    </view>
+    <!-- 便签结束 -->
+
+
+    <!-- 计时记录开始 -->
+    <view class="showTime ">
+        <view class="card">
+            <view class="left">学习：200 min</view>
+            <view class="right">工作：200 min</view>
+        </view>
+
+    </view>
+    <!-- 计时记录结束 -->
+
+</view>

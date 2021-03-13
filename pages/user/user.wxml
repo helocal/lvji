@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<import src="/components/search/search.wxml"></import>
+
+<view class="userinfo">
+    <view wx:if="{{!hasUserInfo && canIUse}}" class="userinfo-if">
+        <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" type="default" plain="plain">授权登录</button>
+    </view>
+    <view wx:else class="userinfo-else">
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+</view>
+
+<view class="other">
+    <view wx:if="{{!hasUserInfo && canIUse}}" class="about-us">
+        <navigator url="/pages/about-us/about-us" class="iconfont icon-guanyuwomen detail">
+            <p>关于我们</p>
+        </navigator>
+        <!-- 分割线 -->
+        <view class="Line"></view>
+
+    </view>
+    <view wx:else class="about-other">
+
+        <navigator url="/pages/ctrl/ctrl" class="iconfont icon-shoucang detail">
+            <p>收藏</p>
+        </navigator>
+        <!-- 分割线 -->
+        <view class="Line"></view>
+
+        <navigator url="/pages/service/service" class="iconfont icon-kefu detail">
+            <p>客服</p>
+        </navigator>
+        <!-- 分割线 -->
+        <view class="Line"></view>
+
+        <navigator url="/pages/service/service" class="iconfont icon-fankui detail">
+            <p>意见反馈</p>
+        </navigator>
+        <!-- 分割线 -->
+        <view class="Line"></view>
+
+        <navigator url="/pages/about-us/about-us" class="iconfont icon-guanyuwomen detail">
+            <p>关于我们</p>
+        </navigator>
+    </view>
+</view>
+<template is="item" data="{{data}}"></template>

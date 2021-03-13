@@ -1,0 +1,31 @@
+<!-- <view>
+    <radio-group class="radio-group" bindchange="radioChange">
+        <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+            <view class="detail">
+                <view class="value">{{item.value}}</view>
+                <view class="text">{{item.text}}</view>
+            </view>
+        </radio>
+    </radio-group>
+</view> -->
+
+
+<!--index.wxml-->
+<!--导航条-->
+<view class="navbar">
+    <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+<!--内容-->
+<view wx:if="{{currentTab==0}}">
+    <view class='info'>
+        <!-- <image src='/img/icon.png'></image> -->
+        <text>没有未完成</text>
+    </view>
+</view>
+
+<view wx:elif="{{currentTab==1}}">
+    <view class='info'>
+        <!-- <image src='/img/icon.png'></image> -->
+        <text>没有已完成</text>
+    </view>
+</view>

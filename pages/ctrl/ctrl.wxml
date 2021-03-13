@@ -1,0 +1,58 @@
+<!-- <view class="container">
+    <button type='primary' style='margin-bottom:40px;' bindtap='startSetInter'>开始</button>
+    <view class="time">{{num}}</view>
+    <button type='primary' bindtap='endSetInter'>结束</button>
+</view> -->
+<view class="all">
+
+    <!-- 顶部 -->
+    <view class="top">
+        <view wx:if="{{active === false}}">
+            <view class="top-h3">
+                <h3>选择一个任务</h3>
+            </view>
+            <view class="p">
+                <p>选择任一任务，开始认真完成吧!</p>
+            </view>
+            <!-- 中部 -->
+            <view class="bottom">
+                <view class="card">
+                    <view class="all">
+                        <view class="title">
+                            学习
+                        </view>
+                        <view class="desc ">
+                            既然选择了学习，就不要玩手机。
+                        </view>
+                    </view>
+
+                </view>
+            </view>
+            <!-- 中部结束-->
+        </view>
+        <view wx:else class="else">
+            <view class="come">
+                计时开始了,不要玩手机呦！
+            </view>
+            <view class="time">
+                {{tenmin}}{{min}}<span>分</span>{{tensec}}{{sec}}<span>秒</span>
+            </view>
+
+        </view>
+    </view>
+    <!-- 顶部结束 -->
+
+
+
+
+    <!-- 尾部 -->
+    <view class="footer">
+        <view wx:if="{{active === false}}" class="active">
+            <button class="button" bindtap='startSetInter' style="width: 400rpx;">开始计时</button>
+        </view>
+        <view wx:else class="noneactive">
+            <button class=" button-active button" bindtap='endSetInter' style="width: 400rpx;">结束计时</button>
+        </view>
+    </view>
+    <!-- 尾部结束 -->
+</view>

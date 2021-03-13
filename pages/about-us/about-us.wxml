@@ -1,0 +1,22 @@
+<view class="about-us">
+
+    <view class="logo">
+        <!-- <image src="../../images/tabbar-icon/我.png" style="width: 100rpx; height: 100rpx;"></image> -->
+        <view class="title">
+            律己
+        </view>
+        <view class="version">
+            版本:1.0.0
+        </view>
+    </view>
+    <view class="detail">
+        <view class="title">功能介绍:</view>
+        <view class="text ">本小程序主要有两大功能：一.创建便签,可设定任务的截止时间,逾期未完成的任务将自动生成督促小卡片.二.进行例如学习,运动,游戏的计时,并且每天生成报表.</view>
+        <view class="title">产品说明:</view>
+        <view class="text">本小程序只获取用户的个人公开信息,例如昵称,头像等,并承诺只用作展示以及提供更好的服务所用!</view>
+    </view>
+    <view class="footer">
+        Copyright© 2020
+    </view>
+
+</view>

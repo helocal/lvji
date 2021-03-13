@@ -1,0 +1,69 @@
+/**index.wxss**/
+
+page {
+    background-color: #F0F0F0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 头像与昵称的展示 */
+
+.userinfo {
+    background-color: var(--themeColor);
+    height: 400rpx;
+}
+
+.userinfo-if {
+    padding-top: 20%;
+}
+
+.userinfo-else {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50rpx;
+}
+
+.userinfo-avatar {
+    width: 150rpx;
+    height: 150rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
+
+.userinfo-nickname {
+    color: white;
+    padding-top: 20rpx;
+}
+
+
+/* 分割线 */
+
+
+/*分割线样式*/
+
+.Line {
+    border-bottom: 1px solid #E2E2E2;
+}
+
+
+/* 信息栏的样式 */
+
+.other {
+    height: 400rpx;
+    width: 80%;
+    background-color: #ffffff;
+    border-radius: 10rpx;
+    margin: 80rpx auto;
+}
+
+.other navigator {
+    height: 100rpx;
+    display: flex;
+    align-items: center;
+}
+
+.other navigator p {
+    margin-left: 40rpx;
+}

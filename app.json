@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/about-us/about-us",
+    "pages/service/service",
+    "pages/ctrl/ctrl",
+    "pages/task/task",
+    "components/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#11D6BB",
+    "navigationBarTitleText": "律己",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#11D6BB",
+    "backgroundColor": "#fafafa",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "记录",
+        "iconPath": "images/tabbar-icon/首页.png",
+        "selectedIconPath": "images/tabbar-icon/首页-s.png"
+      },
+      {
+        "pagePath": "pages/ctrl/ctrl",
+        "text": "律己",
+        "iconPath": "images/tabbar-icon/time.png",
+        "selectedIconPath": "images/tabbar-icon/time-s.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/tabbar-icon/我.png",
+        "selectedIconPath": "images/tabbar-icon/我-s.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,152 @@
+page {
+    background-color: #E2E2E2;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.index .oneword {
+    font-size: 28rpx;
+    margin-top: 20rpx;
+    text-align: center;
+    /* width: 85%; */
+    /* background-color: white;s */
+}
+
+
+/* 下划线开始 */
+
+.line {
+    border-bottom: 1px solid #11D6BB;
+}
+
+.line-mini {
+    border-bottom: 1px solid #11D6BB;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* 下划线结束 */
+
+.index .note {
+    height: 480rpx;
+    background-color: white;
+    margin: 60rpx auto;
+    border-radius: 10rpx;
+    position: relative;
+}
+
+.index .note .img image {
+    width: 50rpx;
+    height: 50rpx;
+    position: absolute;
+    top: -25rpx;
+    left: -20rpx;
+}
+
+.index .note p {
+    color: #11D6BB;
+    margin-left: 100rpx;
+}
+
+.card {
+    width: 90%;
+    height: 100rpx;
+    /* background-color: blue; */
+    margin: 20rpx auto;
+    border-radius: 10rpx;
+    position: relative;
+}
+
+
+/* card背景色 */
+
+.bc1 {
+    background-color: #ADF3EE;
+}
+
+.bc2 {
+    background-color: #DBFBD8;
+}
+
+.bc3 {
+    background-color: #FAD3DE;
+}
+
+.card .taskText {
+    font-size: 30rpx;
+    position: absolute;
+    top: 20rpx;
+    width: 100%;
+    overflow: hidden;
+    margin-left: 10rpx;
+    /* 超出一行文字自动隐藏  */
+    text-overflow: ellipsis;
+    /* 文字隐藏后添加省略号 */
+    white-space: nowrap;
+    /* 强制不换行 */
+}
+
+.card .taskTime {
+    position: absolute;
+    bottom: 0rpx;
+    right: 20rpx;
+    font-size: 25rpx;
+}
+
+.index .note .detail navigator {
+    font-size: 25rpx;
+    height: 50rpx;
+    position: absolute;
+    bottom: 0rpx;
+    left: 400rpx;
+    color: #19ADFA;
+}
+
+
+/* 
+.index .note .detail .not {
+    margin-top: 60rpx;
+} */
+
+.index .note .detail .down {
+    text-align: center;
+    margin-top: 150rpx;
+    color: #81848D;
+    font-size: 35rpx;
+}
+
+.showTime {
+    height: 350rpx;
+    background-color: white;
+    margin: 30rpx auto;
+    border-radius: 10rpx;
+    position: relative;
+}
+
+.showTime .card {
+    position: absolute;
+    /* left: 5%; */
+    font-size: 35rpx;
+    display: inline-block;
+    height: 250rpx;
+    width: 100%;
+    /* background-color: blue;ss */
+    margin: 16rpx auto;
+}
+
+.showTime .card .left {
+    float: left;
+    height: 80rpx;
+    width: 50%;
+    border-right: 1px solid #11D6BB;
+    border-bottom: 1px solid #11D6BB;
+}
+
+.showTime .card .right {
+    float: right;
+    height: 80rpx;
+    width: 50%;
+    /* border-right: 1px solid #11D6BB; */
+    border-bottom: 1px solid #11D6BB;
+}

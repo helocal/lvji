@@ -1,0 +1,123 @@
+/* pages/ctrl/ctrl.wxss */
+
+
+/* 全局样式 */
+
+page {
+    background-color: #F0F0F0;
+    /* height: 100%;
+    width: 100%; */
+    position: relative;
+}
+
+
+/* 顶部样式 */
+
+.top {
+    margin-top: 40rpx;
+}
+
+.top-h3 {
+    text-align: center;
+    margin-top: 40rpx;
+    font-weight: bolder;
+    color: #11D6BB;
+}
+
+.p {
+    text-align: center;
+    margin-top: 40rpx;
+    font-size: 25rpx;
+    flood-color: #11D6BB;
+    margin-top: 30rpx;
+}
+
+.time span {
+    font-size: 20rpx;
+    margin-right: 10rpx;
+}
+
+
+/* 中部样式 */
+
+.bottom {
+    height: 680rpx;
+    width: 100%;
+    /* background-color: #11D6BB; */
+    margin-top: 50rpx;
+    /* top: 80rpx; */
+}
+
+.bottom .card {
+    height: 140rpx;
+    background-color: white;
+    width: 90%;
+    border-radius: 10rpx;
+    margin: 20rpx auto;
+}
+
+.bottom .card .all {
+    width: 100%;
+    height: 140rpx;
+    /* background-color: #11D6BB; */
+    padding-left: 80rpx;
+    padding-top: 30rpx;
+}
+
+.bottom .card .all .title {
+    font-size: 35rpx;
+    font-weight: bolder;
+}
+
+.bottom .card .all .desc {
+    font-size: 25rpx;
+    color: #81848D;
+}
+
+.else {
+    text-align: center;
+    transform: translate(0px, 150px);
+}
+
+.come {
+    font-weight: bolder;
+    color: #11D6BB;
+}
+
+.time {
+    color: #81848D;
+    font-size: 80rpx;
+    margin-top: 20rpx;
+}
+
+
+/* 左侧样式 */
+
+
+/* 底部样式 */
+
+.footer {
+    position: absolute;
+    top: 870rpx;
+    /* margin: 30rpx auto; */
+    /* left: 20%; */
+    margin-top: 30rpx;
+    left: 50%;
+    right: 50%;
+    margin-left: -400rpx;
+    margin-right: -400rpx;
+}
+
+.footer .button {
+    background-color: #FFF;
+    border: 1px solid #11D6BB;
+    border-radius: 50rpx;
+    color: #11D6BB;
+}
+
+.footer .button-active {
+    background-color: #11D6BB;
+    color: white;
+    border-radius: 50rpx;
+    border: 1px solid #11D6BB;
+}
